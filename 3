@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_CTYPE, "Russian");
+double xa,xb,xc,ya,yb,yc,vx,vy,wx,wy,v,w;
+cout<<"Xa= "; cin>>xa;
+cout<<"Ya= "; cin>>ya;
+cout<<"Xb= "; cin>>xb;
+cout<<"Yb= "; cin>>yb;
+cout<<"Xc= "; cin>>xc;
+cout<<"Yc= "; cin>>yc;
+vx= xb-xa; vy= yb-ya;
+v= sqrt(vx*vx+vy*vy);
+wx= xc-xa; wy= yc-ya;
+w= sqrt(wx*wx+wy*wy);
+if (vx<wx) {cout<<"точка В ближе, расстояние= "<<v<<endl;}
+else {cout<<"точка C ближе, расстояние= "<<w<<endl;}
+return 0;
+}
