@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+int a,b,max,c,min,s;
+cout<<"A= "; cin>>a;
+cout<<"В= "; cin>>b;
+cout<<"С= "; cin>>c;
+if (a>b) {max=a; min=b;}
+else {max=b; min=a;}
+if (c>=max) {s=max+c;}
+else if (c>min) {s=max+c;}
+else {s=max+min;}
+cout<<"Summa= "<<s<<endl;
+return 0;
+}
