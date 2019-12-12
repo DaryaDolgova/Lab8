@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    setlocale(LC_CTYPE, "Russian");
+int xa,ya;
+cout<<"Xa= "; cin>>xa;
+cout<<"Ya= "; cin>>ya;
+if (xa>0&ya>0) {cout<<"1я четвердь"<<endl;}
+if (xa<0&ya>0) {cout<<"2я четвердь"<<endl;}
+if (xa<0&ya<0) {cout<<"3я четвердь"<<endl;}
+if (xa>0&ya<0) {cout<<"4я четвердь"<<endl;}
+return 0;
+}
