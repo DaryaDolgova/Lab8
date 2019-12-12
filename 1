@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int a,b,max;
+cout<<"A= "; cin>>a;
+cout<<"В= "; cin>>b;
+if (a>b) {max=a;}
+else {max=b;}
+if (a==b) {a=0;b=0; cout<<"A= "<<a<<endl; cout<<"B= "<<b<<endl;}
+else {a=max; b=max; cout<<"A= "<<a<<endl; cout<<"B= "<<b<<endl;}
+return 0;
+}
